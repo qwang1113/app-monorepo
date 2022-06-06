@@ -10,10 +10,10 @@ import AccountSelector from '@onekeyhq/kit/src/components/Header/AccountSelector
 import ChainSelector from '@onekeyhq/kit/src/components/Header/ChainSelector';
 import DiscoverScreen from '@onekeyhq/kit/src/views/Discover';
 import MeScreen from '@onekeyhq/kit/src/views/Me';
+import Overview from '@onekeyhq/kit/src/views/Overview';
 import PortfolioScreen from '@onekeyhq/kit/src/views/Portfolio';
 import SwapScreen from '@onekeyhq/kit/src/views/Swap';
 import HomeScreen from '@onekeyhq/kit/src/views/Wallet';
-import OverviewScreen from '@onekeyhq/kit/src/views/Wallet/Overview';
 
 import { TabRoutes, TabRoutesParams } from '../types';
 
@@ -27,16 +27,16 @@ interface TabRouteConfig {
 }
 
 export const tabRoutes: TabRouteConfig[] = [
-  // {
-  //   name: TabRoutes.Overview,
-  //   component: OverviewScreen,
-  //   tabBarIcon: () => 'HomeOutline',
-  //   translationId: 'title__home',
-  // },
+  {
+    name: TabRoutes.Overview,
+    component: Overview,
+    tabBarIcon: () => 'NavHomeSolid',
+    translationId: 'title__home',
+  },
   {
     name: TabRoutes.Home,
     component: HomeScreen,
-    tabBarIcon: () => 'NavHomeSolid',
+    tabBarIcon: () => 'NavBankCardSolid',
     translationId: 'title__home',
   },
   {
@@ -87,10 +87,11 @@ const TabNavigator = () => {
 
   return (
     <Tab.Navigator
-      screenOptions={{
+      screenOptions={({ route }) => ({
         lazy: true,
         header: renderHeader,
-      }}
+        headerShown: route.name !== TabRoutes.Overview,
+      })}
     >
       {tabRoutes.map((tab) => (
         <Tab.Screen
