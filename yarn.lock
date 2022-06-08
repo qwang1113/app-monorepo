@@ -3202,6 +3202,11 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.0.tgz#d27e7e76c87a460a4da99c5bfdb1618dcd6cd064"
   integrity sha512-aBvcbMwuanDH4EMrL2TthNJy+4nP59Bimn8egqv6GHMVj0a44cU6Au4PjOhLNqEh9l+IpRGBqMTzec94UdC5xg==
 
+"@noble/ed25519@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@noble/ed25519/-/ed25519-1.6.0.tgz#b55f7c9e532b478bf1d7c4f609e1f3a37850b583"
+  integrity sha512-UKju89WV37IUALIMfKhKW3psO8AqmrE/GvH6QbPKjzolQ98zM7WmGUeY+xdIgSf5tqPFf75ZCYMgym6E9Jsw3Q==
+
 "@node-rs/helper@1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@node-rs/helper/-/helper-1.2.1.tgz#e079b05f21ff4329d82c4e1f71c0290e4ecdc70c"
@@ -3246,16 +3251,16 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@onekeyfe/blockchain-libs@0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@onekeyfe/blockchain-libs/-/blockchain-libs-0.0.34.tgz#eca620f50d4d63d3902fcf4c169befa649aa4a04"
-  integrity sha512-IHybP9CPtJNzFln6dMyttdj82g20XyqcAEFESaP4LkHW4hrIGnmMbIpoeAKSuDC7SCL/H9Pv1L0VQn2i/9r9Qw==
+"@onekeyfe/blockchain-libs@^0.0.35":
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/@onekeyfe/blockchain-libs/-/blockchain-libs-0.0.35.tgz#5fc199424e64e93c7c9feddfa4aa6be572838c44"
+  integrity sha512-1xRPH5nU0q7s5jVFNsVqXdMbgfQmW3FNLgrLkhFujtyXqlkcJTyEKgwgqWV3dD/sW++DaSlQgM3GAnegdbsTOw==
   dependencies:
     "@conflux-dev/conflux-address-js" "^1.3.11"
     "@metamask/eth-sig-util" "^4.0.0"
     "@solana/spl-token" "^0.1.8"
     "@solana/web3.js" "^1.29.2"
-    "@starcoin/starcoin" "^1.6.2"
+    "@starcoin/starcoin" "^2.1.5"
     algo-msgpack-with-bigint "^2.1.1"
     asmcrypto.js "^2.3.2"
     bchaddrjs "^0.5.2"
@@ -3423,10 +3428,10 @@
     "@onekeyfe/cross-inpage-provider-core" "^0.0.10"
     "@onekeyfe/cross-inpage-provider-types" "^0.0.10"
 
-"@onekeyfe/network-list@1.4.8":
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/@onekeyfe/network-list/-/network-list-1.4.8.tgz#7f1e23fd96e818e57d112993a58c9c413eeade0e"
-  integrity sha512-V5/CDTQvWAaoYmjXDB1MMbQ9hQZ66Wbf0ODvPhDL2XKQTzUQ53429/zK583y0uRUQo1ya5muFp17JqClO1SsQg==
+"@onekeyfe/network-list@1.4.9":
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/@onekeyfe/network-list/-/network-list-1.4.9.tgz#4e04bcd54a9043acb293cbf7db6dc05eee394121"
+  integrity sha512-NsEtFXxpYV5gZjXWxYn9oj+E5s2K86+k5ERJ4yud/VMfqq2uaSevuqpe8LE62EQ7GQUgRozIJpS+LoQgy2oCAw==
 
 "@onekeyfe/onekey-cross-webview@^0.0.10":
   version "0.0.10"
@@ -4689,10 +4694,10 @@
     superstruct "^0.14.2"
     tweetnacl "^1.0.0"
 
-"@starcoin/starcoin@^1.6.2":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@starcoin/starcoin/-/starcoin-1.8.0.tgz#76292a86cdfa5f373c3476842289890092e90745"
-  integrity sha512-bMpCw50v8yDrBfeGQc2ZMXmxUL1t4XdwQ58ZpW9PaxNfBNcEsQZVr2dPpcBOad1l//NhX/OhOArOwJ3ezxjEBg==
+"@starcoin/starcoin@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@starcoin/starcoin/-/starcoin-2.1.5.tgz#93f6425c877edb3df791055d7c002a230075c47b"
+  integrity sha512-fm9A7Sx6URk90jbZPevD5SAMxftvb3r8stL9HPJVxAlNL3uD46Ir04auUL9xhYOR39truWtsBeq7C9+DXpo45g==
   dependencies:
     "@ethersproject/basex" "^5.0.4"
     "@ethersproject/bignumber" "^5.0"
@@ -4703,7 +4708,7 @@
     "@ethersproject/properties" "^5.0.4"
     "@ethersproject/sha2" "^5.0.4"
     "@ethersproject/web" "^5.0.9"
-    "@starcoin/stc-ed25519" "^0.1.0"
+    "@noble/ed25519" "^1.6.0"
     bech32 "^2.0.0"
     ethereumjs-util "5.1.0"
     fs "^0.0.1-security"
@@ -4716,13 +4721,7 @@
     js-sha3 "^0.8.0"
     jssha "^3.2.0"
     lodash "^4.17.21"
-    read-bigint "^0.1.6"
     ws "7.2.3"
-
-"@starcoin/stc-ed25519@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@starcoin/stc-ed25519/-/stc-ed25519-0.1.0.tgz#56e65b388889a5953e01806cc3deaa20ddaf8174"
-  integrity sha512-H3oz8fNQD604Ak0cSNTDcbfzLxsB9XAKw1aJO7iBPuZWcHF8bgn7xxOzsinx5V5LGaPeleWc/Qw4vCKnK6cxHQ==
 
 "@stroncium/procfs@^1.2.1":
   version "1.2.1"
@@ -9507,6 +9506,11 @@ detect-file@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/detect-file/-/detect-file-1.0.0.tgz#f0d66d03672a825cb1b73bdb3fe62310c8e552b7"
   integrity sha1-8NZtA2cqglyxtzvbP+YjEMjlUrc=
+
+detect-libc@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.1.tgz#e1897aa88fa6ad197862937fbc0441ef352ee0cd"
+  integrity sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==
 
 detect-libc@^2.0.0:
   version "2.0.1"
@@ -14664,6 +14668,14 @@ keccak@^3.0.0, keccak@^3.0.1:
     node-gyp-build "^4.2.0"
     readable-stream "^3.6.0"
 
+keytar@^7.9.0:
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/keytar/-/keytar-7.9.0.tgz#4c6225708f51b50cbf77c5aae81721964c2918cb"
+  integrity sha512-VPD8mtVtm5JNtA2AErl6Chp06JBfy7diFQ7TQQhdpWOl6MrCRB+eRbvAZUsbGQS9kiMq0coJsy0W0vHpDCkWsQ==
+  dependencies:
+    node-addon-api "^4.3.0"
+    prebuild-install "^7.0.1"
+
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
@@ -16306,6 +16318,13 @@ node-abi@^3.3.0:
   dependencies:
     semver "^7.3.5"
 
+node-abi@^3.3.0:
+  version "3.22.0"
+  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-3.22.0.tgz#00b8250e86a0816576258227edbce7bbe0039362"
+  integrity sha512-u4uAs/4Zzmp/jjsD9cyFYDXeISfUWaAVWshPmDZOFOv4Xl4SbzTXm53I04C2uRueYJ+0t5PEtLH/owbn2Npf/w==
+  dependencies:
+    semver "^7.3.5"
+
 node-addon-api@4.2.0:
   version "4.2.0"
   resolved "https://registry.npmmirror.com/node-addon-api/download/node-addon-api-4.2.0.tgz#117cbb5a959dff0992e1c586ae0393573e4d2a87"
@@ -16320,6 +16339,11 @@ node-addon-api@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-2.0.2.tgz#432cfa82962ce494b132e9d72a15b29f71ff5d32"
   integrity sha512-Ntyt4AIXyaLIuMHF6IOoTakB3K+RWxwtsHNRxllEoA6vPwP9o4866g6YWDLUdnucilZhmkxiHwHr11gAENw+QA==
+
+node-addon-api@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-4.3.0.tgz#52a1a0b475193e0928e98e0426a0d1254782b77f"
+  integrity sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==
 
 node-dir@^0.1.17:
   version "0.1.17"
@@ -17773,6 +17797,25 @@ prebuild-install@^7.0.1:
     tar-fs "^2.0.0"
     tunnel-agent "^0.6.0"
 
+prebuild-install@^7.0.1:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-7.1.0.tgz#991b6ac16c81591ba40a6d5de93fb33673ac1370"
+  integrity sha512-CNcMgI1xBypOyGqjp3wOc8AAo1nMhZS3Cwd3iHIxOdAUbb+YxdNuM4Z5iIrZ8RLvOsf3F3bl7b7xGq6DjQoNYA==
+  dependencies:
+    detect-libc "^2.0.0"
+    expand-template "^2.0.3"
+    github-from-package "0.0.0"
+    minimist "^1.2.3"
+    mkdirp-classic "^0.5.3"
+    napi-build-utils "^1.0.1"
+    node-abi "^3.3.0"
+    npmlog "^4.0.1"
+    pump "^3.0.0"
+    rc "^1.2.7"
+    simple-get "^4.0.0"
+    tar-fs "^2.0.0"
+    tunnel-agent "^0.6.0"
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -18699,11 +18742,6 @@ react@17.0.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-
-read-bigint@^0.1.6:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/read-bigint/-/read-bigint-0.1.7.tgz#54a1b55fd6984ea0a84fbdc4af86d5e0b1058b23"
-  integrity sha512-AW7NH0PK6KwAh/OZEoUlaQXB1rv4HZYu0k8JyodNEBjlwHO+JaG18zi2Qpj9if5yvPwxICR24qOC/2cp5iIIeA==
 
 read-config-file@6.2.0:
   version "6.2.0"
@@ -19823,6 +19861,15 @@ simple-get@^2.7.0:
   integrity sha512-Ijd/rV5o+mSBBs4F/x9oDPtTx9Zb6X9brmnXvMW4J7IR15ngi9q5xxqWBKU744jTZiaXtxaPL7uHG6vtN8kUkw==
   dependencies:
     decompress-response "^3.3.0"
+    once "^1.3.1"
+    simple-concat "^1.0.0"
+
+simple-get@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/simple-get/-/simple-get-4.0.1.tgz#4a39db549287c979d352112fa03fd99fd6bc3543"
+  integrity sha512-brv7p5WgH0jmQJr1ZDDfKDOSeWWg+OVypG99A/5vYGPqJ6pxiaHLy8nxtFjBA7oMa01ebA9gfh1uMCFqOuXxvA==
+  dependencies:
+    decompress-response "^6.0.0"
     once "^1.3.1"
     simple-concat "^1.0.0"
 
