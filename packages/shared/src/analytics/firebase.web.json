@@ -1,10 +1,10 @@
 {
-  "apiKey": "",
-  "authDomain": "",
-  "databaseURL": "",
-  "projectId": "",
-  "storageBucket": "",
-  "messagingSenderId": "",
-  "appId": "",
-  "measurementId": ""
+  "apiKey": "AIzaSyDhZWGLNemE3oCQNvcMp4xgxzqE3KCG5Cs",
+  "authDomain": "onekey-uni.firebaseapp.com",
+  "databaseURL": "https://onekey-uni.firebaseio.com",
+  "projectId": "onekey-uni",
+  "storageBucket": "onekey-uni.appspot.com",
+  "messagingSenderId": "94391474021",
+  "appId": "1:94391474021:web:ad8d952ac748c7514b338c",
+  "measurementId": "G-GX189933LC"
 }
