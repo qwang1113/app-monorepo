@@ -62,6 +62,7 @@ const NavigationApp = () => {
   const { instanceId } = useSettings();
 
   useEffect(() => {
+    console.log('----------------');
     analyticLogEvent('initialized', {
       instanceId,
       platform: platformEnv.symbol,
