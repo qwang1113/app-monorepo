@@ -1,4 +1,4 @@
-name: build-desktop
+name: Build Desktop Release
 
 on:
   workflow_run:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-desktop:
+  release-desktop:
     runs-on: macos-latest
     strategy:
       matrix:

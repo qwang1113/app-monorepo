@@ -1,4 +1,4 @@
-name: build-ext
+name: Build Ext Release
 
 on:
   workflow_run:
